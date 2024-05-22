@@ -25,7 +25,7 @@ const CardSection = () => {
               <button onClick={()=>{
                   addToBasket(item._id)
               }} className='basket'>Add to basket</button>
-              <Link to={`detail/${item._id}}`}className='details'>Details</Link>
+              <Link to={`/detail/${item._id}`}className='details'>Details</Link>
           </div>
       </div>
       ))}

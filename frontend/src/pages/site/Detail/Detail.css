@@ -1,4 +1,7 @@
 .detailpage .container{
     display: flex;
     margin-top: 200px;
+   margin-bottom: 200px;
+   gap: 100px;
+   justify-content: center;
 }
