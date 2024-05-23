@@ -1,10 +1,14 @@
 import React, { useContext } from "react";
 import "./Basket.css";
+import {Helmet} from "react-helmet";
 import MainContext from '../../../context/Context';
 const Basket = () => {
 const {basket,addToBasket,deleteBasket}=useContext(MainContext)
   return (
     <div>
+    <Helmet>
+        <title>Basket</title>
+      </Helmet>
       <table class="table bg-dark">
         <thead>
           <tr>

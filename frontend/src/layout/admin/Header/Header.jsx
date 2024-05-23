@@ -4,32 +4,19 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <>
-      <div className='header1'>
-<div className="container">
-  <div className="left-header1">
-  <i class="fa-brands fa-facebook"></i>
-  <i class="fa-brands fa-twitter"></i>
-  <i class="fa-brands fa-instagram"></i>
-  <i class="fa-brands fa-linkedin"></i>
-  </div>
-  <div className="right-header1">
-    <p><i class="fa-solid fa-phone"></i>(+1) 234 5678 9101</p>
-    <p><i class="fa-solid fa-envelope"></i>shop@yourdumain.com</p>
-  </div>
-</div>
-    </div>
+    
     <div className="header2">
       <div className="container">
         <div className="left-header2">
-        <h3>Selling</h3>
-        <span>.</span>
+        <h3>ADMIN HEADER</h3>
+      
         </div>
         <div className="right-header2">
           <ul>
             <li> <Link to="/">Home</Link></li>
             <li>Products</li>
             <li> <Link to="/basket">Basket</Link></li>
-            <li>Wishlist</li>
+            <li> <Link to="/wishlist">Wishlist</Link></li>
             <li>Blog</li>
             <li>Contact</li>
             <li>Special</li>

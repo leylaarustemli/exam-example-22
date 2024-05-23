@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import "./Detail.css";
+import {Helmet} from "react-helmet";
 const Detail = () => {
   const [detail, setDetail] = useState({});
   const { id } = useParams();
@@ -12,6 +13,9 @@ const Detail = () => {
   }, [id]);
   return (
     <div className="detailpage">
+      <Helmet>
+        <title>DDetail</title>
+      </Helmet>
       <div className="container">
         <div className="left-detail">
           <img width="300px" height="250px" src={detail.image} alt="" />
@@ -19,7 +23,7 @@ const Detail = () => {
         <div className="right-detail">
           <h2>{detail.title}</h2>
           <span>{detail.price}AZN</span>
-          <p>{detail.category}</p>
+          <p>{detail.description}</p>
         </div>
       </div>
     </div>

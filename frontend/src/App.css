@@ -5,3 +5,7 @@
 }
 .container{width: 1330px;
 margin: 0 auto;}
+a{
+    color: black;
+    text-decoration: none;
+}

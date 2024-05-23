@@ -21,7 +21,7 @@ const ROUTES=[
                 path:"/detail/:id",
                 element:<Detail/>
             },{
-                path:"wishlist",
+                path:"/wishlist",
                 element:<WishList/>
             }
         ]
